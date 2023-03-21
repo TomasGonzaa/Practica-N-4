@@ -13,6 +13,14 @@ public class Punto3 {
 			double precio, total;
 			double totalpagar =0;
 			int cantidad;
+			String nombre ="";
+			String apellido="";
+			
+			System.out.println("Ingrese su Nombre");
+			nombre= input.next();
+			
+			System.out.println("Ingrese su Apellido");
+			apellido= input.next();
 			
 			System.out.println("Ingrese Producto a comprar");
 			producto= input.next();
@@ -23,6 +31,10 @@ public class Punto3 {
 			System.out.println("Ingrese la cantidad");
 			cantidad= input.nextInt();
 			total= precio * cantidad;
+			
+			System.out.println("Usuario: " + nombre + " " + apellido + ".");
+			
+			System.out.println("Productos: " + producto + " x " + cantidad + " unidades");
 			
 			System.out.println("Precio Total: $" + total);
 			
